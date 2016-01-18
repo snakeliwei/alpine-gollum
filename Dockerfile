@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER Lyndon Li <snakeliwei@gmail.com>
 
 ENV BUILD_PACKAGES="build-base python make git nodejs gcc g++" \
-    DEV_PACKAGES="py-docutils icu-libs zlib-dev libxml2-dev libxslt-dev readline-dev libffi-dev" \
+    DEV_PACKAGES="py-docutils icu-dev zlib-dev libxml2-dev libxslt-dev readline-dev libffi-dev" \
     RUBY_PACKAGES="ruby ruby-dev ruby-io-console ruby-bundler"
 
 RUN apk add --update $BUILD_PACKAGES $DEV_PACKAGES $RUBY_PACKAGES
