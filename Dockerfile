@@ -9,7 +9,7 @@ RUN apk add --update $BUILD_PACKAGES $DEV_PACKAGES $RUBY_PACKAGES
 
 
 # Install gollum
-RUN gem install gollum redcarpet github-markdown \
+RUN gem install gollum redcarpet github-markdown --no-rdoc \
 
 # cleanup and settings
     && find / -type f -iname \*.apk-new -delete \
