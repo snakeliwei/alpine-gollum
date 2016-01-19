@@ -18,8 +18,7 @@ RUN gem install gollum redcarpet github-markdown --no-rdoc \
 
 # Initialize wiki data
 VOLUME /wikidata
-RUN mkdir /wikidata \
-    && git init /wikidata
+RUN git init /wikidata
 
 # Expose default gollum port 4567
 EXPOSE 4567
